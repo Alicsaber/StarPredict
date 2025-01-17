@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玄机运势 - 融合东西方智慧的运势分析平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">玄机运势</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">功能特点</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900">使用方法</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900">用户评价</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-gray-900">会员价格</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">常见问题</a>
+                </div>
+                <button class="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700">
+                    开始测算
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                探索命运密码，掌握人生方向
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                融合东方玄学、紫微斗数、易经与西方星座学，为您提供专业、精准的运势分析
+            </p>
+            
+            <!-- 运势计算表单 -->
+            <div class="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                <form id="fortuneForm" class="space-y-6">
+                    <div>
+                        <input type="text" id="userName" placeholder="您的姓名" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <input type="date" id="userBirthday" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
+                        立即测算
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">专业解析系统</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-primary-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-compass text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">东方玄学</h3>
+                    <p class="text-gray-600">结合紫微斗数与易经八卦，深入解析命理</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">西方星座</h3>
+                    <p class="text-gray-600">融合占星学原理，全方位剖析性格特质</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">AI 算法</h3>
+                    <p class="text-gray-600">采用先进算法，确保预测准确度</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">使用流程</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-primary-600">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">输入信息</h3>
+                    <p class="text-gray-600">填写姓名和生日</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-primary-600">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">智能分析</h3>
+                    <p class="text-gray-600">系统进行多维度解析</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-primary-600">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">生成报告</h3>
+                    <p class="text-gray-600">获取详细运势报告</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-primary-600">4</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">专家解读</h3>
+                    <p class="text-gray-600">可选择专家详细解读</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">用户评价</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">张先生</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"预测非常准确，帮助我在事业选择上做出了正确的决定。"</p>
+                </div>
+                <!-- 更多评价 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">会员方案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">基础版</h3>
+                    <div class="text-4xl font-bold mb-6">¥39<span class="text-base font-normal">/次</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            基础运势分析
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            运势评级
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            基础建议
+                        </li>
+                    </ul>
+                    <button class="w-full bg-primary-600 text-white py-2 rounded-lg hover:bg-primary-700">
+                        选择方案
+                    </button>
+                </div>
+                <!-- 更多价格方案 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">常见问题</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <span class="text-lg font-semibold">运势分析的准确度如何？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mt-2">
+                        <p class="text-gray-600">我们结合东方玄学与西方星座学，通过AI算法进行多维度分析，准确度在90%以上。</p>
+                    </div>
+                </div>
+                <!-- 更多FAQ项目 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">玄机运势</h3>
+                    <p class="text-gray-400">
+                        版权所有 © 2024 刘小排<br>
+                        联系方式：bourneliu66@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">功能特点</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">会员价格</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 运势结果弹窗 -->
+    <div id="fortuneResult" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+        <div class="bg-white p-8 rounded-xl max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold mb-4">运势分析结果</h3>
+            <div id="fortuneContent" class="space-y-4">
+                <!-- 运势内容将在这里动态插入 -->
+            </div>
+            <button onclick="closeFortuneResult()" class="mt-6 w-full bg-primary-600 text-white py-2 rounded-lg hover:bg-primary-700">
+                关闭
+            </button>
+        </div>
+    </div>
+
+    <script src="./fortune.js"></script>
+</body>
+</html> 
